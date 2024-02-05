@@ -1,0 +1,60 @@
+.topo{
+    height: 200px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 80px;
+    margin: 0 300px 0 0;
+}
+h1 a{
+    text-decoration: none;
+}
+#menu{
+    
+}
+.nomeUsuario{
+    display: flex;
+    text-align: right;
+    background-color: rgb(80, 80, 80);
+    font-size: 20px;
+    color: white;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding:0 5px ;
+}
+.sejabemv{
+    padding: 0 200px 10px;
+}
+.menuli{
+    display: inline;
+    font-size: 20px;
+    padding: 7px;    
+}
+.menuli a{
+    text-decoration: none;
+}
+.meio{
+    margin: 0 200px;
+}
+.rodape{
+    height: 200px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logorodape{
+    font-size: 80px;
+    font-weight: bold;
+}
+#marca{
+    background-color: rgb(80, 80, 80);
+    color: rgb(255, 255, 255);
+    padding: 0 0 20px 100px ;
+}
+
