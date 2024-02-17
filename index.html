@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="logo">saude e <br> bem estar</h1>
+        <!-- # menu  -->
+        <nav class="menu">
+          <span class="menuOp"><a href="index.html">home</a></span>
+          <span class="menuOp"><a href="habitos_saudaveis.html">habitos saudaveis</a></span>
+          <span class="menuOp"><a href="sobre.html">sobre nos</a></span>
+          <span class="menuOp"><a href="comunidade.html">comunidade</a></span>
+          <span class="menuOp"><a href="login.html">login</a></span>
+        </nav>
+        <div class="log-img">
+            <span class="lo-alinha"><img class="img-login" src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt=""></span>
+            <button class="btseach">Buscar <input class=" search" type="search"  value=""  ></button>
+        </div>
+    </header>
+    <main>
+        <!-- #banner -->
+        <section class="banner">
+          <img src="img/banner.png" alt="">
+        </section>
+        <!-- # destaque -->
+        <h2>DESTAQUE</h2>
+        <div class="destaque">
+            <div class="dtq"></div>
+            <div class="dtq"></div>
+            <div class="dtq"></div>
+            <div class="dtq"></div>
+            <div class="dtq"></div>
+            <div class="dtq"></div>
+        </div>
+        <!-- locais de parceria  -->
+        <h3>locais de parceria</h3>
+        <section class="parcr">
+            <div id="mapa"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7977.2181736961875!2d-48.47635149999997!3d-1.4106755000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1708015366468!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+            <div class="parceiros" id="local1"></div>
+            <div class="parceiros" id="local2"></div>
+            <div class="parceiros" id="local3"></div>
+            <div class="parceiros" id="local4"></div>
+            <div class="parceiros" id="local5"></div>
+            <div class="parceiros" id="local6"></div>
+            <div class="parceiros" id="local7"></div>
+            <div class="parceiros" id="local8"></div>
+            <div class="parceiros" id="local9"></div>
+        </section>      
+    </main>
+    
+    <div class="container">
+        <h4>Entre em Contato</h4><br>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+          </div>
+          <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+          </div>
+          <div class="form-group">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required>
+          </div>
+          <div class="form-group">
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+              <option value="">Selecione o Estado</option>
+              <option value="AC">Acre</option>
+              <option value="AL">Alagoas</option>
+              <option value="PA">Pará</option>
+              <option value="SP">São Paulo</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="BA">Bahia</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <button class="btform" type="submit">Enviar</button>
+        </form>
+      </div>
+    
+    <footer>
+        <div class="rsociais">
+            <img src="img/rede social/1-removebg-preview.png" alt="">
+            <img src="img/rede social/2-removebg-preview.png" alt="">
+            <img src="img/rede social/3-removebg-preview.png" alt="">
+            <img src="img/rede social/4-removebg-preview.png" alt="">
+        </div>
+    </footer>
+    <script src="js/script.js" defer></script>
+</body>
+</html>

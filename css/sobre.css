@@ -1,0 +1,29 @@
+.conteudo{
+    margin: 0 200px;
+}
+.imgconteudo{
+    height: 200px;
+    margin:0 0 10px 10px;
+    float: right;
+}
+#titlesobre{
+    font-size: 25px;
+}
+#titleColab{
+    text-align: center;
+    font-size: 25px;
+}
+.colaboradores{
+    display: grid;
+    grid-template-areas: "colab1 colab2 colab3 colab4 colab5 ";
+    justify-content: center;
+    gap: 25px;
+       
+
+}
+.colab{
+    height: 200px;
+    width: 150px;
+    border: 1px solid;
+    margin: 20px 0;
+}
