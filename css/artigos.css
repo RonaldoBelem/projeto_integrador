@@ -1,0 +1,49 @@
+.artg{
+    margin: 0 200px;
+    display: grid;
+    grid-template-areas:
+    "art1 art1 sidemenu"
+    "art2 art2 sidemenu"
+    "art3 art3 sidemenu"
+    "art4 art4 ."
+    "art5 art5 .";
+    gap: 15px;
+    margin-top: 15px;
+    justify-content: space-evenly;
+}
+
+.artigo{
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+#sidemenu{grid-area: sidemenu;
+    padding: 20px 0;
+    width: 200px;
+}
+#art1{ grid-area: art1; height: 100px;
+}
+#art2{ grid-area: art2; height: 100px;
+}
+#art3{ grid-area: art3; height: 100px;
+}
+#art4{ grid-area: art4; height: 100px;
+}
+#art5{ grid-area: art5; height: 100px;
+}
+.imgart{
+    margin-right: 15px;
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.paragrafo{
+  
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    
+    color: rgb(31, 96, 0);
+}

@@ -1,0 +1,14 @@
+.artigo{
+    margin: 0 200px;
+    text-align: center;    
+}
+h2{
+    font-size: 30px;
+}
+p{
+    font-size: 18px;
+    margin-top: 30px 0;
+}
+#imgart{
+    width: 900px;
+}
