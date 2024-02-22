@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/new-style.css"> -->
+    <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+    <div class="container container-flex">
+        <!-- logo -->
+        <div><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></div>
+
+        <!-- navegação -->
+        <nav>
+        <ul>
+            <li><a href="1-index.html">Home</a></li>
+            <li><a href="2-publicacoes.html">Publicações</a></li>
+            <li><a href="3-sobre.html">Sobre Nós</a></li>
+            <li><a href="4-comunidade.html">Comunidade</a></li>
+            <li><a href="5-login.html">Login</a></li>
+        </ul>
+        </nav>
+        
+        <!-- pesquisar -->
+        <div class="secao-pesquisar">
+        <form action="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <label for="input-pesquisar">Pesquisar</label> <!-- ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
+            <input type="search" id="input-pesquisar">
+        </form>
+        </div>
+
+        <!-- usuário -->
+        <div class="secao-usuario">
+        <a href="#">
+            <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
+            <span id="userName">Usuário!</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+        </div>
+
+    </div>        
+    </header>
+
+    <!-- CARROSEL DE IMAGENS -->
+    <div class="carrosel">
+    <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+    <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+    <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+    </div>
+
+    <!-- MAIN -->
+    <main class="login">
+        <div class="container">
+            <h1>Faça seu login:</h1>
+            <form action="#" class="container-flex">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email">
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha">
+
+                <input type="submit" value="Entrar" class="button">
+
+                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                <p>Não possui cadastro? <a href="#">Cadastre-se aqui</a></p>
+            </form>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container container-flex">
+            <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="img/icones/facebook.png" alt="Ícone do Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/icones/instagram.png" alt="Ícone do Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/icones/youtube.png" alt="Ícone do Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

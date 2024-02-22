@@ -1,0 +1,106 @@
+/* PARA TODAS PÁGINAS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1366px;
+    margin: auto;
+}
+
+.container-flex {
+    display: flex;
+}
+
+header,
+footer {
+    background-color: #CCC;
+    height: 80px;
+}
+
+header .container-flex,
+footer .container-flex {
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+header nav li {
+    display: inline;
+    margin-right: 16px;
+}
+
+footer {
+    height: 64px;
+    align-items: center;
+}
+
+footer li img {
+    height: 32px;
+}
+
+/* PRIMEIRA PÁGINA */
+.destaques ul,
+.logotipo-parcerias ul {
+    margin: 0;
+    padding: 0;
+}
+
+.destaques li,
+.logotipo-parcerias li {
+    list-style: none;
+    display: inline-block;
+}
+
+/* SEGUNDA PÁGINA */
+.conteudo-principal {
+    flex: 4;
+}
+
+aside {
+    flex: 1;
+}
+
+/* TERCEIRA PÁGINA */
+#imagem-sobre {
+    float: right;
+}
+
+.realizadores .container {
+    text-align: center;
+    margin: auto;
+}
+
+.realizadores li {
+    width: 400px;
+    padding: 20px;
+    display: inline-block;
+}
+
+.realizadores p {
+    text-align: justify;
+}
+
+/* QUINTA PÁGINA */
+.login .container {
+    text-align: center;
+    width: 400px;
+    border: 2px solid #ccc;
+    margin: 20px auto;
+}
+
+.login form {
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+.login form label {
+    text-align: left;
+    padding-top: 8px;
+}
+
+.login .button {
+    margin-top: 24px;
+}
