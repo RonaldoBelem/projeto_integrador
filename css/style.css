@@ -10,7 +10,6 @@ header {
     display: flex;
     width: 50%;
     height: 60px;
-    /* background-color: #0056b3; */
 
 }
 
@@ -37,15 +36,10 @@ header {
 }
 
 .nav--link:hover {
-    color: black;
+    color: #BBC6CA;
 }
 
-.nav--link:active {
-    background-color: rgb(200, 255, 185);
-    font-size: 20px;
-    padding: 4px 10px;
-    border: 1px solid;
-}
+
 
 .logo {
     display: flex;
