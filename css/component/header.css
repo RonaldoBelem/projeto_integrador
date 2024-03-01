@@ -1,7 +1,9 @@
+@import url('../colors.css');
+
 header {
     display: flex;
     width: 100%;
-    background-color: #426A62;
+    background-color: --cor01;
     align-items: center;
     justify-content: center;
 }
@@ -64,9 +66,10 @@ header {
     width: 150px;
 }
 
-.btsearch {
+.search {
     position: relative;
     width: 10vw;
+    
 }
 
 #input--search {
@@ -79,7 +82,7 @@ header {
 
 
 
-.btsearch--icon {
+.search--icon {
     position: absolute;
     left: 5px;
     top: 5px;
