@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saúde Plena</title>
+<<<<<<< HEAD
 
   <link rel="stylesheet" href="css/cores.css">
+=======
+  <link rel="stylesheet" href="./css/index.css">
+>>>>>>> remake
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
+
   <!-- HEADER -->
   <header>
-    <div class="container container-flex">
-      <!-- logo -->
-      <div><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></div>
+    <!-- logo -->
+    <span class="logo"><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></span>
 
-      <!-- navegação -->
-      <nav>
-        <ul>
-          <li><a href="1-index.html">Home</a></li>
-          <li><a href="2-publicacoes.html">Publicações</a></li>
-          <li><a href="3-sobre.html">Sobre Nós</a></li>
-          <li><a href="4-comunidade.html">Comunidade</a></li>
-          <li><a href="5-login.html">Login</a></li>
-        </ul>
-      </nav>
-      
-      <!-- pesquisar -->
-      <div class="secao-pesquisar">
-        <form action="#">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <label for="input-pesquisar">Pesquisar</label>
-          <input type="search" id="input-pesquisar">
-        </form>
-      </div>
+    <!-- navegação -->
+    <nav class="navbar">
+      <ul class="nav--list">
+        <li class="nav--item"><a class="nav--link" href="1-index.html">Home</a></li>
+        <li class="nav--item"><a class="nav--link" href="2-publicacoes.html">Publicações</a></li>
+        <li class="nav--item"><a class="nav--link" href="3-sobre.html">Sobre Nós</a href="3-sobre.html"></li>
+        <li class="nav--item"><a class="nav--link" href="4-comunidade.html">Comunidade</a></li>
+        <li class="nav--item"><a class="nav--link" href="5-login.html">Login</a></li>
+      </ul>
+    </nav>
 
-      <!-- usuário -->
-      <div class="secao-usuario">
-        <a href="#">
-          <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-          <span id="userName">Usuário!</span>
-          <i class="fa-solid fa-chevron-down"></i>
-        </a>
-      </div>
-
+    <!-- pesquisar -->
+    <div class="secao-pesquisar">
+      <form action="#">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <label for="input-pesquisar">Pesquisar</label>
+        <input type="search" id="input-pesquisar">
+      </form>
     </div>
+
+    <!-- usuário -->
+    <div class="secao-usuario">
+      <a href="#">
+        <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
+        <span id="userName">Usuário!</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </div>
+
+
   </header>
 
   <!-- CARROSEL DE IMAGENS/PODE SER REALOCADO CONFORME O ASSUNTO DO CARROSEL -->
+<<<<<<< HEAD
   <div class="carrosel">
     <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
     <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
     <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
+=======
+ 
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+      <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+      <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+    </div>
+    <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+>>>>>>> remake
   </div>
 
   <!-- MAIN -->
@@ -141,9 +159,10 @@
         <h1>Onde estamos - parcerias</h1>
         <div class="container-flex">
           <section class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7977.2181736961875!2d-48.47635149999997!3d-1.4106755000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1708015366468!5m2!1spt-BR!2sbr"
-            width="663px" height="512px" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7977.2181736961875!2d-48.47635149999997!3d-1.4106755000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1708015366468!5m2!1spt-BR!2sbr"
+              width="663px" height="512px" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
           </section>
           <section class="logotipo-parcerias">
             <ul>
@@ -271,25 +290,28 @@
   <!-- FOOTER -->
   <footer>
     <div class="container container-flex">
-        <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
-        <ul class="container-flex">
-            <li>
-                <a href="#">
-                    <img src="img/icones/facebook.png" alt="Ícone do Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/icones/instagram.png" alt="Ícone do Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/icones/youtube.png" alt="Ícone do Youtube">
-                </a>
-            </li>
-        </ul>
+      <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
+      <ul class="container-flex">
+        <li>
+          <a href="#">
+            <img src="img/icones/facebook.png" alt="Ícone do Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icones/instagram.png" alt="Ícone do Instagram">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icones/youtube.png" alt="Ícone do Youtube">
+          </a>
+        </li>
+      </ul>
     </div>
   </footer>
+
+<script src="./js/script.js"></script>
 </body>
+
 </html>
