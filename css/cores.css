@@ -1,0 +1,17 @@
+:root {
+    --cor01: #BBE8F2;
+    --cor02: #94D7F2;
+    --cor03: #5FB6D9;
+    --cor04: #3D9DD9;
+    --cor05: #2685BF;
+
+    --fonte_padrao: Arial, Verdana;
+}
+
+body {
+    background-color: var(--cor01);
+}
+
+header {
+    background-color: var(--cor04);
+}
