@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saúde Plena</title>
   <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="css/new-style.css">
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
 </head>
 
@@ -14,39 +15,43 @@
 
   <!-- HEADER -->
   <header>
-    <!-- logo -->
-    <span class="logo"><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></span>
+    <div class="container container-flex">
+      <!-- logo -->
+      <!-- <div><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></div> -->
 
-    <!-- navegação -->
-    <nav class="navbar">
-      <ul class="nav--list">
-        <li class="nav--item"><a class="nav--link" href="1-index.html">Home</a></li>
-        <li class="nav--item"><a class="nav--link" href="2-publicacoes.html">Publicações</a></li>
-        <li class="nav--item"><a class="nav--link" href="3-sobre.html">Sobre Nós</a href="3-sobre.html"></li>
-        <li class="nav--item"><a class="nav--link" href="4-comunidade.html">Comunidade</a></li>
-        <li class="nav--item"><a class="nav--link" href="5-login.html">Login</a></li>
-      </ul>
-    </nav>
+      <!-- navegação -->
+      <nav>
+        <ul>
+          <li><a href="1-index.html">Home</a></li>
+          <li><a href="2-publicacoes.html">Publicações</a></li>
+          <li><a href="3-sobre.html">Sobre Nós</a></li>
+          <li><a href="4-comunidade.html">Comunidade</a></li>
+          <li><a href="5-login.html">Login</a></li>
+        </ul>
+      </nav>
 
-    <!-- pesquisar -->
-    <div class="search">
-      <input type="search" placeholder="Pesquisar" id="input--search">
+      <!-- pesquisar -->
+      <div class="secao-pesquisar">
+        <form action="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <label for="input-pesquisar">Pesquisar</label> <!-- ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
+          <input type="search" id="input-pesquisar">
+        </form>
+      </div>
+
+      <!-- usuário -->
+      <div class="secao-usuario">
+        <a href="#">
+          <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
+          <span id="userName">Usuário!</span>
+          <i class="fa-solid fa-chevron-down"></i>
+        </a>
+      </div>
+
     </div>
-
-    <!-- usuário -->
-    <div class="user">
-      <a href="#" class="user--link">
-        <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-        <span id="userName">Usuário!</span>
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-    </div>
-
-
   </header>
 
   <!-- CARROSEL DE IMAGENS/PODE SER REALOCADO CONFORME O ASSUNTO DO CARROSEL -->
-
   <div class="carousel-container">
     <div class="carousel">
       <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
@@ -64,139 +69,139 @@
       <section class="destaques">
         <h1>Destaques</h1>
         <ul class="destaques--list">
-          
-        
+
+
         </ul>
 
-      <!-- parcerias -->
-      <section class="parcerias">
-        <h1>Onde estamos - parcerias</h1>
-        <div class="container-flex">
-          <section class="mapa">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7977.2181736961875!2d-48.47635149999997!3d-1.4106755000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1708015366468!5m2!1spt-BR!2sbr"
-              width="663px" height="512px" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </section>
-          <section class="logotipo-parcerias">
-            <ul>
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+        <!-- parcerias -->
+        <section class="parcerias">
+          <h1>Onde estamos - parcerias</h1>
+          <div class="container-flex">
+            <section class="mapa">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7977.2181736961875!2d-48.47635149999997!3d-1.4106755000000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1708015366468!5m2!1spt-BR!2sbr"
+                width="663px" height="512px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+            <section class="logotipo-parcerias">
+              <ul>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
 
-              <li>
-                <a href="#">
-                  <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
-                </a>
-              </li>
-            </ul>
-          </section>
-        </div>
-      </section>
+                <li>
+                  <a href="#">
+                    <img src="https://via.placeholder.com/120x120?text=Logo_120x120" alt="Logotipo 'Nome da Empresa'">
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </section>
 
-      <!-- contato -->
-      <section class="contato">
-        <form action="#">
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" required>
+        <!-- contato -->
+        <section class="contato">
+          <form action="#">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
 
-          <label for="sobrenome">Sobrenome:</label>
-          <input type="text" id="sobrenome" required>
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" required>
 
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" required>
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" required>
 
-          <label for="estado">Estado:</label>
-          <select id="estado" name="estado" required>
-            <option value="BR">Selecione o Estado</option>
-            <option value="BR">Acre (AC)</option>
-            <option value="BR">Alagoas (AL)</option>
-            <option value="BR">Amapá (AP)</option>
-            <option value="BR">Amazonas (AM)</option>
-            <option value="BR">Bahia (BA)</option>
-            <option value="BR">Ceará (CE)</option>
-            <option value="BR">Distrito Federal (DF)</option>
-            <option value="BR">Espírito Santo (ES)</option>
-            <option value="BR">Goiás (GO)</option>
-            <option value="BR">Maranhão (MA)</option>
-            <option value="BR">Mato Grosso (MT)</option>
-            <option value="BR">Mato Grosso do Sul (MS)</option>
-            <option value="BR">Minas Gerais (MG)</option>
-            <option value="BR">Pará (PA)</option>
-            <option value="BR">Paraíba (PB)</option>
-            <option value="BR">Paraná (PR)</option>
-            <option value="BR">Pernambuco (PE)</option>
-            <option value="BR">Piauí (PI)</option>
-            <option value="BR">Rio de Janeiro (RJ)</option>
-            <option value="BR">Rio Grande do Norte (RN)</option>
-            <option value="BR">Rio Grande do Sul (RS)</option>
-            <option value="BR">Rondônia (RO)</option>
-            <option value="BR">Roraima (RR)</option>
-            <option value="BR">Santa Catarina (SC)</option>
-            <option value="BR">São Paulo (SP)</option>
-            <option value="BR">Sergipe (SE)</option>
-            <option value="BR">Tocantins (TO)</option>
-          </select>
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+              <option value="BR">Selecione o Estado</option>
+              <option value="BR">Acre (AC)</option>
+              <option value="BR">Alagoas (AL)</option>
+              <option value="BR">Amapá (AP)</option>
+              <option value="BR">Amazonas (AM)</option>
+              <option value="BR">Bahia (BA)</option>
+              <option value="BR">Ceará (CE)</option>
+              <option value="BR">Distrito Federal (DF)</option>
+              <option value="BR">Espírito Santo (ES)</option>
+              <option value="BR">Goiás (GO)</option>
+              <option value="BR">Maranhão (MA)</option>
+              <option value="BR">Mato Grosso (MT)</option>
+              <option value="BR">Mato Grosso do Sul (MS)</option>
+              <option value="BR">Minas Gerais (MG)</option>
+              <option value="BR">Pará (PA)</option>
+              <option value="BR">Paraíba (PB)</option>
+              <option value="BR">Paraná (PR)</option>
+              <option value="BR">Pernambuco (PE)</option>
+              <option value="BR">Piauí (PI)</option>
+              <option value="BR">Rio de Janeiro (RJ)</option>
+              <option value="BR">Rio Grande do Norte (RN)</option>
+              <option value="BR">Rio Grande do Sul (RS)</option>
+              <option value="BR">Rondônia (RO)</option>
+              <option value="BR">Roraima (RR)</option>
+              <option value="BR">Santa Catarina (SC)</option>
+              <option value="BR">São Paulo (SP)</option>
+              <option value="BR">Sergipe (SE)</option>
+              <option value="BR">Tocantins (TO)</option>
+            </select>
 
-          <label for="cidade">Cidade:</label>
-          <input type="text" id="cidade" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
 
-          <label for="texto">Escreva sua mensagem:</label>
-          <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+            <label for="texto">Escreva sua mensagem:</label>
+            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
 
-          <input type="submit" value="Enviar">
-        </form>
-      </section>
+            <input type="submit" value="Enviar">
+          </form>
+        </section>
 
     </div>
   </main>
