@@ -2,11 +2,32 @@
 * {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+:root {
+    --cor01: #BBE8F2;
+    --cor02: #94D7F2;
+    --cor03: #5FB6D9;
+    --cor04: #3D9DD9;
+    --cor05: #0068b2;
+
+    --cor06: #02b8bf;
+    --cor07: #fafcfd;
+
+    --cor-fonte: #0e4074;
 }
 
 .container {
     width: 1366px;
+    max-width: 1080px;
     margin: auto;
+}
+
+header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
 }
 
 .container-flex {
@@ -15,7 +36,8 @@
 
 header,
 footer {
-    background-color: #CCC;
+    /* background-color: #CCC; */
+    background-color: var(--cor07);
     height: 80px;
 }
 
@@ -30,6 +52,33 @@ header nav li {
     display: inline;
     margin-right: 16px;
 }
+
+header nav li a {
+    color: var(--cor-fonte);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+/* M A I N */
+
+h1 {
+    color: var(--cor05);
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    margin: 10px 0px;
+}
+
+h2 {
+    color: var(--cor05);
+}
+
+p {
+    font-family: Inter, Helvetica, Arial, sans-serif;
+    line-height: 25px;
+    text-indent: 15px;
+    text-align: justify;
+}
+
+/* F O O T E R */
 
 footer {
     height: 64px;
@@ -65,6 +114,7 @@ aside {
 /* TERCEIRA PÁGINA */
 #imagem-sobre {
     float: right;
+    margin: 10px;
 }
 
 .realizadores .container {

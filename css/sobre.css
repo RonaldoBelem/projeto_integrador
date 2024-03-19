@@ -1,29 +1,10 @@
-.conteudo{
-    margin: 0 200px;
-}
-.imgconteudo{
-    height: 200px;
-    margin:0 0 10px 10px;
-    float: right;
-}
-#titlesobre{
-    font-size: 25px;
-}
-#titleColab{
-    text-align: center;
-    font-size: 25px;
-}
-.colaboradores{
-    display: grid;
-    grid-template-areas: "colab1 colab2 colab3 colab4 colab5 ";
-    justify-content: center;
-    gap: 25px;
-       
+:root {
+    --cor01: #BBE8F2;
+    --cor02: #94D7F2;
+    --cor03: #5FB6D9;
+    --cor04: #3D9DD9;
+    --cor05: #2685BF;
 
+    --fonte_padrao: Arial, Verdana;
 }
-.colab{
-    height: 200px;
-    width: 150px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    margin: 20px 0;
-}
+
