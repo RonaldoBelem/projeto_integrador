@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
     <title>Login</title>
 </head>
@@ -12,7 +13,7 @@
     <header>
     <div class="container container-flex">
         <!-- logo -->
-        <div><img src="img/logo.png" alt="Logotipo do site Saúde Plena"></div>
+        <div><img id="logo" src="img/logo.png" alt="Logotipo do site Saúde Plena"></div>
 
         <!-- navegação -->
         <nav>
@@ -47,11 +48,15 @@
     </header>
 
     <!-- CARROSEL DE IMAGENS -->
-    <div class="carrosel">
-    <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
-    <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
-    <img src="https://via.placeholder.com/1920x480?text=banner_1920x480" alt="">
-    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+          <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+          <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+          <img src="https://via.placeholder.com/1903x480?text=banner_1920x480" alt="">
+        </div>
+        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
 
     <!-- MAIN -->
     <main class="login">
@@ -95,5 +100,6 @@
             </ul>
         </div>
     </footer>
+    <script type="module" src="./js/index.js"></script>
 </body>
 </html>
