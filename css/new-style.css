@@ -144,6 +144,22 @@ p {
     justify-content: space-evenly;
 }
 
+.contato{
+    margin: 50px 0;
+}
+.contato form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+.contato form input{
+    margin: 5px;
+}
+
 /* F O O T E R */
 
 footer {
