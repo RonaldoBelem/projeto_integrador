@@ -3,21 +3,17 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    list-style-type: none;
+    font-family: "Inter Tight", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --cor01: #BBE8F2;
-    --cor02: #94D7F2;
-    --cor03: #5FB6D9;
-    --cor04: #3D9DD9;
-    --cor05: #0068b2;
-
-    --cor06: #02b8bf;
-    --cor07: #fafcfd;
-
-    --cor-fonte: #0e4074;
+    --cor-fonte: #0068b2;
+    --cor-fundo: #fafcfd;
+    --cor-hover: #0e4074;
 }
 
 .container {
@@ -26,18 +22,18 @@
     margin: auto;
 }
 
-header {
-    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
-}
-
 .container-flex {
     display: flex;
 }
 
+header {
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+
 header,
 footer {
-    /* background-color: #CCC; */
-    background-color: var(--cor07);
+    background-color: var(--cor-fundo);
     height: 90px;
 }
 
@@ -63,7 +59,7 @@ header nav li {
 }
 
 header nav li a {
-    color: var(--cor05);
+    color: var(--cor-fonte);
     font-family: "Inter Tight", sans-serif;
     font-weight: bold;
     padding-bottom: 5px;
@@ -72,7 +68,7 @@ header nav li a {
 header nav li a:hover {
     color: var(--cor-fonte);
     text-transform: 0.10s;
-    border-bottom: 2px solid var(--cor-fonte);
+    border-bottom: 2px solid var(--cor-hover);
 }
 
 .secao-direita {
@@ -96,9 +92,7 @@ header nav li a:hover {
 }
 
 .secao-pesquisar:hover {
-    /* border-radius: 20px; */
-    /* border: 1px solid #0068b2; */
-    border-bottom: 2px solid var(--cor-fonte)
+    border-bottom: 2px solid var(--cor-hover)
 }
 
 #input-pesquisar {
@@ -112,13 +106,13 @@ header nav li a:hover {
 /* M A I N */
 
 h1 {
-    color: var(--cor05);
+    color: var(--cor-fonte);
     font-family: "Inter Tight", sans-serif;
     margin: 10px 0px;
 }
 
 h2 {
-    color: var(--cor05);
+    color: var(--cor-fonte);
 }
 
 p {
@@ -133,11 +127,14 @@ p {
 footer {
     height: 64px;
     align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.219);
 }
 
 footer li img {
     height: 32px;
 }
+
+
 
 /* PRIMEIRA PÁGINA */
 .destaques ul,
@@ -161,10 +158,9 @@ aside {
     flex: 1;
 }
 
-/* TERCEIRA PÁGINA */
-#imagem-sobre {
-    float: right;
-    margin: 10px;
+.sobre-empresa img {
+    width: 550px;
+    max-width: 100%;
 }
 
 .realizadores .container {
@@ -181,6 +177,8 @@ aside {
 .realizadores p {
     text-align: justify;
 }
+
+
 
 /* QUINTA PÁGINA */
 .login .container {

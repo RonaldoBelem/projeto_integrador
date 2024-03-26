@@ -26,21 +26,24 @@
             </nav>
             
             <!-- pesquisar -->
-            <div class="secao-pesquisar">
-            <form action="#">
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <label for="input-pesquisar">Pesquisar</label> <!-- ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
-                <input type="search" id="input-pesquisar">
-            </form>
-            </div>
+            <div class="secao-direita">
+                <!-- usuário -->
+                <div class="secao-usuario">
+                <a href="#">
+                    <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
+                    <span id="userName">Usuário!</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                </div>
 
-            <!-- usuário -->
-            <div class="secao-usuario">
-            <a href="#">
-                <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-                <span id="userName">Usuário!</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
+                <div class="secao-pesquisar">
+                    <form action="#">
+                        <!-- <label for="input-pesquisar"></label> ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
+                        <input type="search" id="input-pesquisar" placeholder="Pesquisar">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </form>
+                </div>
+                
             </div>
 
         </div>        
@@ -157,26 +160,31 @@
 
     <!-- FOOTER -->
     <footer>
-    <div class="container container-flex">
-        <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
-        <ul class="container-flex">
-            <li>
-                <a href="#">
-                    <img src="img/icones/facebook.png" alt="Ícone do Facebook">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/icones/instagram.png" alt="Ícone do Instagram">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="img/icones/youtube.png" alt="Ícone do Youtube">
-                </a>
-            </li>
-        </ul>
-    </div>
+        <div class="container container-flex">
+            <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
+            <ul class="container-flex">
+                <li>
+                    <a href="#">
+                        <img src="img/icones/rede social/1-removebg-preview.png" alt="Ícone do Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/icones/rede social/2-removebg-preview.png" alt="Ícone do Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/icones/rede social/4-removebg-preview.png" alt="Ícone do Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/icones/rede social/3-removebg-preview.png" alt="Ícone do Youtube">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

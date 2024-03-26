@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/new-style.css">
+  <link rel="stylesheet" href="css/4-comunidade.css">
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
   <title>Comunidade</title>
 </head>
@@ -26,22 +27,25 @@
         </nav>
         
         <!-- pesquisar -->
-        <div class="secao-pesquisar">
-        <form action="#">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <label for="input-pesquisar">Pesquisar</label> <!-- ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
-            <input type="search" id="input-pesquisar">
-        </form>
-        </div>
+        <div class="secao-direita">
+          <!-- usuário -->
+          <div class="secao-usuario">
+          <a href="#">
+              <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
+              <span id="userName">Usuário!</span>
+              <i class="fa-solid fa-chevron-down"></i>
+          </a>
+          </div>
 
-        <!-- usuário -->
-        <div class="secao-usuario">
-        <a href="#">
-            <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-            <span id="userName">Usuário!</span>
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-        </div>
+          <div class="secao-pesquisar">
+              <form action="#">
+                  <!-- <label for="input-pesquisar"></label> ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
+                  <input type="search" id="input-pesquisar" placeholder="Pesquisar">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+              </form>
+          </div>
+          
+      </div>
 
     </div>        
   </header>
@@ -51,7 +55,6 @@
     <div class="container">
       <section class="minhas-publicacoes">
         <h1>Comunidade</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum animi exercitationem repellat ducimus odit quis impedit architecto inventore iure eos accusantium dolore, ipsa, hic assumenda modi sapiente cupiditate nihil. Placeat? Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur dolores at ab temporibus deserunt autem recusandae quis nam expedita facilis, quasi illo dicta possimus nulla? Qui officiis adipisci ipsam. Blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vero nostrum tenetur in dolorem accusamus molestiae modi atque, laudantium rerum, quis praesentium? Cumque a ducimus consectetur reprehenderit earum eligendi! Dolorum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quia alias aperiam id sed odit adipisci laudantium amet impedit quis, voluptatibus, quae illo distinctio aspernatur. Quidem nobis nulla vitae rem! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore laboriosam velit quas cum quidem unde libero quae dolore repudiandae voluptates quaerat placeat consectetur iure, deleniti sapiente alias iusto tempora molestiae!</p>
         <form action="#">
           <label for="publicacoes">Envie sua publicação:</label>
           <textarea name="publicacoes" id="publicacoes" cols="30" rows="10"></textarea>
@@ -63,91 +66,51 @@
         <h1>Últimas publicações</h1>
         <ul>
           <li>
-            <article>
+            <article class="publicacao">
               <a href="#">
                 <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
+                <img src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt="Icone de avatar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas deleniti explicabo sequi corrupti iste eius sapiente deserunt aperiam dolorem ex in, asperiores, harum eaque.</p>
               </a>
             </article>
           </li>
 
           <li>
-            <article>
+            <article class="publicacao">
               <a href="#">
                 <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
+                <img src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt="Icone de avatar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas deleniti explicabo sequi corrupti iste eius sapiente deserunt aperiam dolorem ex in, asperiores, harum eaque.</p>
               </a>
             </article>
           </li>
 
           <li>
-            <article>
+            <article class="publicacao">
               <a href="#">
                 <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
+                <img src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt="Icone de avatar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas deleniti explicabo sequi corrupti iste eius sapiente deserunt aperiam dolorem ex in, asperiores, harum eaque.</p>
               </a>
             </article>
           </li>
 
           <li>
-            <article>
+            <article class="publicacao">
               <a href="#">
                 <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
+                <img src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt="Icone de avatar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas deleniti explicabo sequi corrupti iste eius sapiente deserunt aperiam dolorem ex in, asperiores, harum eaque.</p>
               </a>
             </article>
           </li>
 
           <li>
-            <article>
+            <article class="publicacao">
               <a href="#">
                 <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
-              </a>
-            </article>
-          </li>
-
-          <li>
-            <article>
-              <a href="#">
-                <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
-              </a>
-            </article>
-          </li>
-
-          <li>
-            <article>
-              <a href="#">
-                <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
-              </a>
-            </article>
-          </li>
-
-          <li>
-            <article>
-              <a href="#">
-                <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
-              </a>
-            </article>
-          </li>
-
-          <li>
-            <article>
-              <a href="#">
-                <h2>Título da publicação</h2>
-                <img src="https://via.placeholder.com/320x180?text=artigo_320x180" alt="">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!</p>
+                <img src="img/pngtree-male-avatar-vector-icon-png-image_691595-removebg-preview.png" alt="Icone de avatar">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore animi harum doloremque dolor similique in at dicta asperiores. Delectus voluptas odit maiores sed necessitatibus dolorum ipsum molestias blanditiis voluptate harum!Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quas deleniti explicabo sequi corrupti iste eius sapiente deserunt aperiam dolorem ex in, asperiores, harum eaque.</p>
               </a>
             </article>
           </li>
@@ -163,21 +126,26 @@
         <ul class="container-flex">
             <li>
                 <a href="#">
-                    <img src="img/icones/facebook.png" alt="Ícone do Facebook">
+                    <img src="img/icones/rede social/1-removebg-preview.png" alt="Ícone do Facebook">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/icones/instagram.png" alt="Ícone do Instagram">
+                    <img src="img/icones/rede social/2-removebg-preview.png" alt="Ícone do Facebook">
                 </a>
             </li>
             <li>
                 <a href="#">
-                    <img src="img/icones/youtube.png" alt="Ícone do Youtube">
+                    <img src="img/icones/rede social/4-removebg-preview.png" alt="Ícone do Instagram">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/icones/rede social/3-removebg-preview.png" alt="Ícone do Youtube">
                 </a>
             </li>
         </ul>
     </div>
-  </footer>
+</footer>
 </body>
 </html>
