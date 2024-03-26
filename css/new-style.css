@@ -245,6 +245,7 @@ aside {
     width: 400px;
     border: 1px solid rgb(187, 187, 187);
     padding: 10px;
+    border-radius: 5px;
 }
 
 .contato form input{
@@ -257,4 +258,24 @@ aside {
     color: white;
     border-radius: 7px ;
     font-size: 16px;
+}
+
+
+.foto-realizadores{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.realizadores h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+
+ul li{
+    list-style: none;
 }
