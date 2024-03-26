@@ -152,7 +152,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 400px;
-    border: 1px solid;
+    border: 1px solid rgb(187, 187, 187);
     padding: 10px;
 }
 
