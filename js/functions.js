@@ -53,6 +53,22 @@ const destaquesObj = [
     titulo: 'Hidratação',
     url: './img/destaque/hidratacao.jpg',
     alt: 'Imagem de destaque 1'
+  },
+
+  {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+  {
+    titulo: 'Saude e bem Estar',
+    url: './img/destaque/saude-envolve-bem-estar-fisico-mental-social.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+   {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
   }
   
 ]
