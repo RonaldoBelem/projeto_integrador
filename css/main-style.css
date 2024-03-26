@@ -24,8 +24,8 @@
 }
 
 .container {
-    width: 1366px;
     max-width: 1080px;
+    width: 100%;
     margin: auto;
 }
 
@@ -36,7 +36,6 @@
 header {
     border-bottom: 1px solid rgba(128, 128, 128, 0.219);
 }
-
 
 header,
 footer {
@@ -52,12 +51,8 @@ footer .container-flex {
 }
 
 #logo {
-    width: 80px;
+    width: 70px;
     border-radius: 40px;
-}
-
-header nav {
-    margin-top: 25px;
 }
 
 header nav li {
@@ -65,11 +60,11 @@ header nav li {
     margin-right: 16px;
 }
 
-header nav li a {
+a,
+header span {
     color: var(--cor-fonte);
     font-family: "Inter Tight", sans-serif;
     font-weight: bold;
-    padding-bottom: 5px;
 }
 
 header nav li a:hover {
@@ -78,24 +73,8 @@ header nav li a:hover {
     border-bottom: 2px solid var(--cor-hover);
 }
 
-.secao-direita {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.secao-usuario {
-    margin-bottom: 10px;
-    color: var(--cor-fonte);
-    font-family: "Inter Tight", sans-serif;
-    font-size: 14px;
-}
-
 .secao-pesquisar {
-    display: flex;
-    align-items: center;
-    width: 250px;
-    padding: 5px;
+    border-bottom: 2px solid var(--cor-fundo)
 }
 
 .secao-pesquisar:hover {
@@ -104,18 +83,28 @@ header nav li a:hover {
 
 #input-pesquisar {
     background-color: transparent;
-    width: 230px;
+    width: 80%;
     padding: 5px;
     border: none;
     outline: none;
 }
 
-/* M A I N */
-
-h1 {
-    color: var(--cor-fonte);
+input,
+input::placeholder {
     font-family: "Inter Tight", sans-serif;
-    margin: 10px 0px;
+}
+
+.carousel-container {
+    width: 100%;   
+    height: 640px;
+}
+
+/* M A I N */
+h1 {
+    font-family: "Inter Tight", sans-serif;
+    color: var(--cor-fonte);
+    margin-top: 32px;
+    margin-bottom: 16px;
 }
 
 h2 {
@@ -129,6 +118,20 @@ p {
     text-align: justify;
 }
 
+.button {
+    font-family: "Inter Tight", sans-serif;
+    color: #fff;
+    background-color: var(--cor-hover);
+    margin: 16px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 2px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
 /* F O O T E R */
 
 footer {
@@ -137,6 +140,10 @@ footer {
     border-top: 1px solid rgba(128, 128, 128, 0.219);
 }
 
-footer li img {
+footer li {
+    padding: 0 4px;
+}
+
+footer li img{
     height: 32px;
 }

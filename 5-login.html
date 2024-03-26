@@ -4,65 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="css/new-style.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="css/5-login.css">
     <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("img/login-background.jpg");
+        }
+    </style>
     <title>Login</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header>
-    <div class="container container-flex">
-        <!-- logo -->
-        <div><img id="logo" src="img/logo.png" alt="Logotipo do site Saúde Plena"></div>
-
-        <!-- navegação -->
-        <nav>
-        <ul>
-            <li><a href="1-index.html">Home</a></li>
-            <li><a href="2-publicacoes.html">Publicações</a></li>
-            <li><a href="3-sobre.html">Sobre Nós</a></li>
-            <li><a href="4-comunidade.html">Comunidade</a></li>
-            <li><a href="5-login.html">Login</a></li>
-        </ul>
-        </nav>
-        
-        <!-- pesquisar -->
-        <div class="secao-direita">
-            <!-- usuário -->
-            <div class="secao-usuario">
-            <a href="#">
-                <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-                <span id="userName">Usuário!</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-            </div>
-
-            <div class="secao-pesquisar">
-                <form action="#">
-                    <!-- <label for="input-pesquisar"></label> ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
-                    <input type="search" id="input-pesquisar" placeholder="Pesquisar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
-            </div>
-            
-        </div>
-
-    </div>        
-    </header>
-
-    <!-- CARROSEL DE IMAGENS -->
-    <div class="carousel-container">
-        <div class="carousel">
-          <img src="img/banners/banner-clinica-generoso.jpg" alt="">
-          <img src="img/banners/banner-saude-empresarial.jpg" alt="">
-          <img src="img/banners/banner-outubro-rosa.png" alt="">
-        </div>
-        <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
-        <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>
-    </div>
-
     <!-- MAIN -->
-    <main class="login">
+    <main class="login container-flex">
         <div class="container">
             <h1>Faça seu login:</h1>
             <form action="#" class="container-flex">
@@ -74,40 +28,14 @@
 
                 <input type="submit" value="Entrar" class="button">
 
-                <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
-                <p>Não possui cadastro? <a href="#">Cadastre-se aqui</a></p>
+                <div>
+                    <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
+                    <p>Não possui cadastro? <a href="#">Cadastre-se aqui</a></p>
+                </div>
             </form>
         </div>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <div class="container container-flex">
-            <p>2024 - &copy; Saúde Plena - Todos os direitos reservados</p>
-            <ul class="container-flex">
-                <li>
-                    <a href="#">
-                        <img src="img/icones/rede social/1-removebg-preview.png" alt="Ícone do Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icones/rede social/2-removebg-preview.png" alt="Ícone do Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icones/rede social/4-removebg-preview.png" alt="Ícone do Instagram">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="img/icones/rede social/3-removebg-preview.png" alt="Ícone do Youtube">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </footer>
     <script type="module" src="./js/index.js"></script>
 </body>
 </html>

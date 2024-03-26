@@ -6,60 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saúde Plena</title>
   <link rel="stylesheet" href="./css/index.css">
-  <link rel="stylesheet" href="css/new-style.css">
+  <link rel="stylesheet" href="css/main-style.css">
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <!-- HEADER -->
+    <header>
+      <div class="container container-flex">
+          <!-- logo -->
+          <div><img id="logo" src="img/logo-copia.png" alt="Logotipo do site Saúde Plena"></div>
 
+          <!-- navegação -->
+          <nav>
+          <ul>
+              <li><a href="1-index.html">Home</a></li>
+              <li><a href="2-publicacoes.html">Publicações</a></li>
+              <li><a href="3-sobre.html">Sobre Nós</a></li>
+              <li><a href="4-comunidade.html">Comunidade</a></li>
+              <li><a href="5-login.html">Login</a></li>
+          </ul>
+          </nav>
+          
+          <!-- pesquisar -->
+          <div class="secao-pesquisar">
+              <form action="#">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  <input type="search" id="input-pesquisar" placeholder="Pesquisar">
+              </form>
+          </div>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container container-flex">
-        <!-- logo -->
-        <div><img id="logo" src="img/logo-copia.png" alt="Logotipo do site Saúde Plena"></div>
+          <!-- usuário -->
+          <a href="#">
+              <i class="fa-solid fa-circle-user"></i> Bem vindo(a),
+              <span id="userName">Usuário!</span>
+              <i class="fa-solid fa-chevron-down"></i>
+          </a>
 
-        <!-- navegação -->
-        <nav>
-        <ul>
-            <li><a href="1-index.html">Home</a></li>
-            <li><a href="2-publicacoes.html">Publicações</a></li>
-            <li><a href="3-sobre.html">Sobre Nós</a></li>
-            <li><a href="4-comunidade.html">Comunidade</a></li>
-            <li><a href="5-login.html">Login</a></li>
-        </ul>
-        </nav>
-
-      <!-- pesquisar -->
-      <div class="secao-direita">
-        <!-- usuário -->
-        <div class="secao-usuario">
-        <a href="#">
-            <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-            <span id="userName">Usuário!</span>
-            <i class="fa-solid fa-chevron-down"></i>
-        </a>
-        </div>
-        <!-- pesquisar -->
-        <div class="secao-pesquisar">
-            <form action="#">
-                <!-- <label for="input-pesquisar"></label> ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
-                <input type="search" id="input-pesquisar" placeholder="Pesquisar">
-                <i class="fa-solid fa-magnifying-glass"></i>
-            </form>
-        </div>
-        
-    </div>
-
-    </div>
+      </div>        
   </header>
 
   <!-- CARROSEL DE IMAGENS/PODE SER REALOCADO CONFORME O ASSUNTO DO CARROSEL -->
   <div class="carousel-container">
     <div class="carousel">
-      <img src="img/banners/banner-clinica-generoso.jpg" alt="">
-      <img src="img/banners/banner-saude-empresarial.jpg" alt="">
-      <img src="img/banners/banner-outubro-rosa.png" alt="">
+      <img src="img/banners/banner-2.jpg" alt="">
+      <img src="img/banners/banner-1.jpg" alt="">
+      <img src="img/banners/banner-3.jpg" alt="">
     </div>
     <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
     <button class="next-btn"><i class="fa-solid fa-chevron-right"></i></button>

@@ -7,10 +7,6 @@
     padding: 10px;
 }
 
-#btn-publicar {
-    padding: 5px;
-}
-
 .publicacao {
     border: 2px solid rgba(128, 128, 128, 0.219);
     border-radius: 2px;
@@ -39,4 +35,8 @@
     color: black;
     text-align: justify;
     padding: 5px;
+}
+
+main .textarea {
+    resize: none;
 }
