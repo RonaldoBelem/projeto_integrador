@@ -149,6 +149,19 @@ footer li img {
     display: inline-block;
 }
 
+.destaques {
+    background-color: var(--cor01);
+    
+    
+}
+
+.destaques--list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
 /* SEGUNDA PÁGINA */
 .conteudo-principal {
     flex: 4;

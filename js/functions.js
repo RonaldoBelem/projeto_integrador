@@ -42,14 +42,17 @@ export function destaques() {
 
   const destaques = document.querySelector('.destaques--list');
 
-  destaques.innerHTML += (`
-  <li>
-    <article>
-      <a href="#">
-        <img src="https://via.placeholder.com/320x180?text=destaque_320x180" alt="">
-        <h2>Título do destaque</h2>
-      </a>  
-    </article>
-  </li>`)
+  for (let i = 0; i < 6; i++) {
+
+    destaques.innerHTML += `
+        <li>
+          <article>
+            <a href="#">
+            <h2 style="text-align: center;">Título do destaque</h2>
+              <img src="https://via.placeholder.com/320x180?text=destaque_320x180" alt="">
+            </a>  
+          </article>
+        </li>`
+  }
 
 }
