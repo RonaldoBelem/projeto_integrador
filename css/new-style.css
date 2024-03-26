@@ -129,6 +129,11 @@ p {
     text-align: justify;
 }
 
+.logotipo-parcerias img{
+    height: 120px;
+    width: 120px;
+}
+
 /* F O O T E R */
 
 footer {
