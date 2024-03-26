@@ -165,6 +165,12 @@ footer li img {
     padding: 10px;
     flex-wrap: wrap;
 }
+
+
+.destaques--list img {
+    width: 300px;
+    height: 200px;
+}
 /* SEGUNDA PÁGINA */
 .conteudo-principal {
     flex: 4;
