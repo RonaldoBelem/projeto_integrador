@@ -37,22 +37,59 @@ export function carouselImg() {
 
 }
 
+const destaquesObj = [
+  
+  {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+  {
+    titulo: 'Saude e bem Estar',
+    url: './img/destaque/saude-envolve-bem-estar-fisico-mental-social.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+   {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+
+  {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+  {
+    titulo: 'Saude e bem Estar',
+    url: './img/destaque/saude-envolve-bem-estar-fisico-mental-social.jpg',
+    alt: 'Imagem de destaque 1'
+  },
+   {
+    titulo: 'Hidratação',
+    url: './img/destaque/hidratacao.jpg',
+    alt: 'Imagem de destaque 1'
+  }
+  
+]
 
 export function destaques() {
 
-  const destaques = document.querySelector('.destaques--list');
+  const destaquesList = document.querySelector('.destaques--list');
 
-  for (let i = 0; i < 6; i++) {
+  for (let i = 0; i < destaquesObj.length; i++) {
 
-    destaques.innerHTML += `
+    destaquesList.innerHTML += `
         <li>
           <article>
             <a href="#">
-            <h2 style="text-align: center;">Título do destaque</h2>
-              <img src="https://via.placeholder.com/320x180?text=destaque_320x180" alt="">
+            <h2 style="text-align: center;">${destaquesObj[i].titulo}</h2>
+              <img src="${destaquesObj[i].url}" alt="">
             </a>  
           </article>
         </li>`
   }
+
+  console.log(destaquesObj[0].url);
 
 }
