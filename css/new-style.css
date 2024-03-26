@@ -152,11 +152,6 @@ footer li img {
     display: inline-block;
 }
 
-.destaques {
-    background-color: var(--cor01);
-    
-    
-}
 
 .destaques--list {
     display: flex;
@@ -222,4 +217,44 @@ aside {
 
 .login .button {
     margin-top: 24px;
+}
+
+
+.logotipo-parcerias img{
+    height: 120px;
+    width: 120px;
+}
+
+.logotipo-parcerias{
+    height: 400px;
+    width: 400px;
+}
+
+.container-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contato{
+    margin: 50px 0;
+}
+.contato form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+}
+
+.contato form input{
+    margin: 5px;
+}
+
+.btn-form{
+    background-color: #3483fa;
+    padding: 5px;
+    color: white;
+    border-radius: 7px ;
+    font-size: 16px;
 }
