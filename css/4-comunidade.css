@@ -4,6 +4,11 @@
     display: flex;
     width: 600px;
     margin: 5px 0px;
+    padding: 10px;
+}
+
+#btn-publicar {
+    padding: 5px;
 }
 
 .publicacao {
