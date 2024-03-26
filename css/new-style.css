@@ -166,6 +166,7 @@ footer li img {
     width: 300px;
     height: 200px;
 }
+
 /* SEGUNDA PÁGINA */
 .conteudo-principal {
     flex: 4;
@@ -220,25 +221,26 @@ aside {
 }
 
 
-.logotipo-parcerias img{
+.logotipo-parcerias img {
     height: 120px;
     width: 120px;
 }
 
-.logotipo-parcerias{
+.logotipo-parcerias {
     height: 400px;
     width: 400px;
 }
 
-.container-flex{
+.container-flex {
     display: flex;
     justify-content: space-evenly;
 }
 
-.contato{
+.contato {
     margin: 50px 0;
 }
-.contato form{
+
+.contato form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -248,27 +250,19 @@ aside {
     border-radius: 5px;
 }
 
-.contato form input{
+.contato form input {
     margin: 5px;
 }
 
-.btn-form{
-    background-color: #3483fa;
-    padding: 5px;
-    color: white;
-    border-radius: 7px ;
-    font-size: 16px;
-}
 
-
-.foto-realizadores{
+.foto-realizadores {
     height: 200px;
     width: 200px;
     border-radius: 50%;
     border: 1px solid #ccc;
 }
 
-.realizadores h1{
+.realizadores h1 {
     margin-top: 20px;
     margin-bottom: 20px;
     text-align: center;
@@ -276,6 +270,83 @@ aside {
 }
 
 
-ul li{
+ul li {
     list-style: none;
+}
+
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    justify-content: center;
+    border: 1px solid rgb(187, 187, 187);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.login-form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 70%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.logo-login {
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+}
+
+
+
+.btn-form {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+}
+
+
+.btn-form:hover {
+    background-color: #0068b2;
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
+.login-form p {
+   
+    margin-top: 5px;
 }
