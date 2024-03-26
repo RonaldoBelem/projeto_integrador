@@ -139,6 +139,11 @@ p {
     width: 400px;
 }
 
+.container-flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 /* F O O T E R */
 
 footer {
