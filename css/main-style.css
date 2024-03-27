@@ -30,13 +30,10 @@ header {
     border-bottom: 1px solid rgba(128, 128, 128, 0.219);
 }
 
-<<<<<<< HEAD:css/main-style.css
-=======
 .container-flex {
     display: flex;
 }
 
->>>>>>> 3b6c227d8c5977aeac4d4406972e0fafd7e3a890:css/new-style.css
 header,
 footer {
     /* background-color: #CCC; */
@@ -61,14 +58,12 @@ header nav li {
     margin-right: 16px;
 }
 
-<<<<<<< HEAD:css/main-style.css
-a,
-header span {
+a, header span {
     color: var(--cor-fonte);
-=======
+}
+
 header nav li a {
     color: var(--cor05);
->>>>>>> 3b6c227d8c5977aeac4d4406972e0fafd7e3a890:css/new-style.css
     font-family: "Inter Tight", sans-serif;
     font-weight: bold;
 }
@@ -97,15 +92,10 @@ header nav li a:hover {
     outline: none;
 }
 
-<<<<<<< HEAD:css/main-style.css
-input,
-input::placeholder {
-=======
 /* M A I N */
 
 h1 {
-    color: var(--cor05);
->>>>>>> 3b6c227d8c5977aeac4d4406972e0fafd7e3a890:css/new-style.css
+    color: black;
     font-family: "Inter Tight", sans-serif;
 }
 
