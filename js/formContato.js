@@ -49,6 +49,7 @@ function envioForm(label, input) {
         if (input.value === ""){
             label.classList.add("cpObrigatorio")
             input.classList.add("errado")
+            alert("Preencha Todos os Campos")
         }else if (obj.inputNome.value > 3){
             label.classList.remove("cpObrigatorio")
             input.classList.remove("errado")
@@ -118,18 +119,5 @@ function validacaoEstado() {
 }
 
  validacaoEstado()
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 export{validacao,validacaoEmail,validacaoEstado,obj,envioForm  }
