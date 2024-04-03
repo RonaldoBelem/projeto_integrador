@@ -1,0 +1,32 @@
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid;
+    padding: 20px;
+    
+}
+
+.cpObrigatorio::after{
+    content: "*Campo Obrigatorio ";
+    color: white;
+    background-color: rgb(88, 71, 71);
+    float: right;
+}
+.correto{
+    background-color: rgb(231, 239, 230);
+}
+.errado{
+    background-color: rgb(241, 221, 221);
+}
+
+form button{
+    background-color: var(--cor05);
+   
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 3px;
+    font-size: 15px;
+    color: white;
+}
