@@ -5,53 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saúde Plena</title>
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/component/carousel.css">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/formContato.css">
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-      <div class="container container-flex">
-          <!-- logo -->
-          <div><img id="logo" src="img/logo-copia.png" alt="Logotipo do site Saúde Plena"></div>
+  <!-- HEADER -->
+  <header>
+    <div class="container container-flex">
+      <!-- logo -->
+      <div><img id="logo" src="img/logo-copia.png" alt="Logotipo do site Saúde Plena"></div>
 
-        <!-- navegação -->
-        <nav>
+      <!-- navegação -->
+      <nav>
         <ul>
-            <li><a href="1-index.html">Home</a></li>
-            <li><a href="2-publicacoes.html">Publicações</a></li>
-            <li><a href="3-sobre.html">Sobre Nós</a></li>
-            <li><a href="4-comunidade.html">Comunidade</a></li>
-            <li><a href="5-login.html">Login</a></li>
+          <li><a href="1-index.html">Home</a></li>
+          <li><a href="2-publicacoes.html">Publicações</a></li>
+          <li><a href="3-sobre.html">Sobre Nós</a></li>
+          <li><a href="4-comunidade.html">Comunidade</a></li>
+          <li><a href="5-login.html">Login</a></li>
         </ul>
-        </nav>
-        
-        <!-- pesquisar -->
-        <div class="secao-direita">
-            <!-- usuário -->
-            <div class="secao-usuario">
-            <a href="#">
-                <i class="fa-solid fa-circle-user"></i>Bem vindo(a),
-                <span id="userName">Usuário!</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </a>
-            </div>
+      </nav>
 
-            <div class="secao-pesquisar">
-                <form action="#">
-                    <!-- <label for="input-pesquisar"></label> ACESSIBILIDADE/IMPORTANTE SUBSTITUIR O PLACEHOLDER -->
-                    <input type="search" id="input-pesquisar" placeholder="Pesquisar">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </form>
-            </div>
-            
+      <!-- pesquisar -->
+      <div class="secao-pesquisar">
+        <div action="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" id="input-pesquisar" placeholder="Pesquisar">
         </div>
-        
-    </div>        
-</header>
+      </div>
+
+      <!-- usuário -->
+      <a href="#">
+        <i class="fa-solid fa-circle-user"></i> Bem vindo(a),
+        <span id="userName">Usuário!</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+
+    </div>
+  </header>
 
   <!-- CARROSEL DE IMAGENS/PODE SER REALOCADO CONFORME O ASSUNTO DO CARROSEL -->
   <div class="carousel-container">
@@ -72,7 +66,7 @@
     <div class="container" style="justify-content: center;">
       <!-- destaques -->
       <section class="destaques" style="text-align: center;">
-        <h1  style="font-size: 2rem; padding-bottom: 30px;">Destaques</h1>
+        <h1 style="font-size: 2rem; padding-bottom: 30px;">Destaques</h1>
         <ul class="destaques--list">
 
 
@@ -144,7 +138,7 @@
                   </a>
                 </li>
 
-               
+
               </ul>
             </section>
           </div>
@@ -164,34 +158,34 @@
 
             <label for="estado">Estado:</label>
             <select id="estado" name="estado" required>
-              <option >Selecione o Estado</option>
-              <option >Acre (AC)</option>
-              <option >Alagoas (AL)</option>
-              <option >Amapá (AP)</option>
-              <option >Amazonas (AM)</option>
-              <option >Bahia (BA)</option>
-              <option >Ceará (CE)</option>
-              <option >Distrito Federal (DF)</option>
-              <option >Espírito Santo (ES)</option>
-              <option >Goiás (GO)</option>
-              <option >Maranhão (MA)</option>
-              <option >Mato Grosso (MT)</option>
-              <option >Mato Grosso do Sul (MS)</option>
-              <option >Minas Gerais (MG)</option>
-              <option >Pará (PA)</option>
-              <option >Paraíba (PB)</option>
-              <option >Paraná (PR)</option>
-              <option >Pernambuco (PE)</option>
-              <option >Piauí (PI)</option>
-              <option >Rio de Janeiro (RJ)</option>
-              <option >Rio Grande do Norte (RN)</option>
-              <option >Rio Grande do Sul (RS)</option>
-              <option >Rondônia (RO)</option>
-              <option >Roraima (RR)</option>
-              <option >Santa Catarina (SC)</option>
-              <option >São Paulo (SP)</option>
-              <option >Sergipe (SE)</option>
-              <option >Tocantins (TO)</option>
+              <option>Selecione o Estado</option>
+              <option>Acre (AC)</option>
+              <option>Alagoas (AL)</option>
+              <option>Amapá (AP)</option>
+              <option>Amazonas (AM)</option>
+              <option>Bahia (BA)</option>
+              <option>Ceará (CE)</option>
+              <option>Distrito Federal (DF)</option>
+              <option>Espírito Santo (ES)</option>
+              <option>Goiás (GO)</option>
+              <option>Maranhão (MA)</option>
+              <option>Mato Grosso (MT)</option>
+              <option>Mato Grosso do Sul (MS)</option>
+              <option>Minas Gerais (MG)</option>
+              <option>Pará (PA)</option>
+              <option>Paraíba (PB)</option>
+              <option>Paraná (PR)</option>
+              <option>Pernambuco (PE)</option>
+              <option>Piauí (PI)</option>
+              <option>Rio de Janeiro (RJ)</option>
+              <option>Rio Grande do Norte (RN)</option>
+              <option>Rio Grande do Sul (RS)</option>
+              <option>Rondônia (RO)</option>
+              <option>Roraima (RR)</option>
+              <option>Santa Catarina (SC)</option>
+              <option>São Paulo (SP)</option>
+              <option>Sergipe (SE)</option>
+              <option>Tocantins (TO)</option>
             </select>
 
             <label for="cidade">Cidade:</label>
@@ -200,7 +194,7 @@
             <label for="texto">Escreva sua mensagem:</label>
             <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
 
-            <button type="submit" >Enviar</button>
+            <button type="submit">Enviar</button>
           </form>
         </section>
 
