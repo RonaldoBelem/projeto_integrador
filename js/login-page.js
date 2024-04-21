@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     modal();
     getEstados();
-
+    
 });
 
 async function getEstados() {
@@ -88,12 +88,7 @@ function modal() {
 
 
 
-function validateForm(){
-
-}
-
-function submitForm(event) {
-    
+function validateForm() {
     let objForm = []
 
     const fields = [
@@ -109,25 +104,27 @@ function submitForm(event) {
     fields.forEach(field => {
         const inputElement = document.getElementById(field.input);
         objForm[field.input] = inputElement.value;
-
-
-        if (!inputElement.value) {
+        if (!inputElement.value.trim()) {
             errorMessage += field.message + '<br>';
         }
-
         event.preventDefault();
-        
-
     });
-
 
 
 
     if (errorMessage) {
         showAlert(errorMessage.trim());
-        event.preventDefault(); // Impede o envio do formulário se os campos não estiverem preenchidos
+        event.preventDefault();
+        return false;
     }
 
+    alert("O formulário foi enviado com sucesso!");
+}
+
+function submitForm(event) {
+
+
+    validateForm();
 
 
 }
@@ -136,7 +133,6 @@ const customAlert = document.getElementById('custom-alert');
 const alertMessage = document.getElementById('alert-message');
 const closeAlertBtn = document.getElementById('close-alert');
 
-// Função para exibir o modal de alerta com uma mensagem específica
 function showAlert(message) {
     customAlert.style.display = "block";
     setTimeout(function () {
