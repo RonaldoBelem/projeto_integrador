@@ -1,33 +1,260 @@
 /* QUINTA PÁGINA */
 
-.login .container {
-    max-width: 400px;
-    position: absolute;
-    top: 25%;
-    right: 10%;
-    padding: 32px;
-    border: 1px solid #ccc;
-    border-radius: 2px
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+body {
+    background-image: url("../img/login-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.login form {
+
+.login-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin-right: 250px;
+}
+
+.login-form {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Cor branca com 80% de opacidade */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 400px;
+}
+
+.login-form h1 {
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.login-form form {
+    display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.login-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.login-form input[type="submit"] {
+    padding: 10px;
+    background-color: #EA96A3;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #C093B0;
+}
+
+.links {
     text-align: center;
+    margin-top: 20px;
 }
 
-.login label {
-    margin-top: 16px;
-    text-align: left;
+.links a {
+    text-decoration: none;
+    color: #007bff;
 }
 
-.login input {
-    padding: 8px;
+.links span {
+    margin: 0 10px;
 }
 
-.login, .login p {
+
+
+
+
+
+
+
+
+.modal {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+
+}
+
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 25%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+
+/* Estilizando o botão fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content h2 {
+    font-size: 1.7rem;
     text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.login a:hover {
-    border-bottom: 2px solid var(--cor-hover);
+
+.register-form label {
+    font-weight: bold;
+}
+
+.register-form input {
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+/* Estilizando o botão de cadastro */
+.btn-cadastro {
+    background-color: #EF97A7;
+    color: #fff;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.btn-cadastro:hover {
+    background-color: #C093B4;
+}
+
+.register-form select {
+    font-family: 'Inter Tight', sans-serif;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+#custom-alert {
+    display: none;
+    position: fixed;
+    z-index: 10000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+#custom-alert .modal-alert {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+#custom-alert h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+#custom-alert p {
+    margin-bottom: 15px;
+}
+
+#custom-alert #close-alert {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#custom-alert #close-alert:hover {
+    background-color: #0056b3;
+}
+
+
+.required {
+    color: red;
+    margin-left: 5px;
+    font-weight: bold;
 }

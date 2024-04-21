@@ -4,41 +4,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="css/main-style.css">
     <link rel="stylesheet" href="css/5-login.css">
     <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
     <style>
-        body {
-            background-image: url("img/login-background.jpg");
-        }
+
     </style>
     <title>Login</title>
 </head>
 
 <body>
     <!-- MAIN -->
-    <main class="login container-flex">
-        <div class="container">
-            <h1>Faça seu login:</h1>
-            <form action="#" class="container-flex">
+    <main class="login-container">
+        <div class="login-form">
+            <h1>Faça seu login </h1>
+            <form action="#">
                 <label for="email">E-mail:</label>
-                <input type="email" id="email">
+                <input type="email" id="email" required>
 
                 <label for="senha">Senha:</label>
-                <input type="password" name="senha" id="senha">
+                <input type="password" name="senha" id="senha" required>
 
-            <input type="submit" value="Entrar" class="button btn-form">
+                <input type="submit" value="Entrar">
 
-                <div>
-                    <p>Esqueceu a senha? <a href="#">Clique aqui</a></p>
-                    <p>Não possui cadastro? <a href="#">Cadastre-se aqui</a></p>
+                <div class="links">
+                    <a href="#">Esqueceu a senha?</a>
+                    <span>|</span>
+                    <a href="#" id="cadastre-se">Cadastre-se</a>
                 </div>
             </form>
         </div>
     </main>
 
-    <script type="module" src="./js/index.js"></script>
+
+    <!-- Modal de Cadastro -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Cadastre-se</h2>
+            <!-- Aqui você pode adicionar o formulário de cadastro -->
+            <form action="#" class="register-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" >
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email-cadastro" required>
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha-cadastro" required>
+
+                <label for="estados">Selecione um estado:</label>
+                <select id="estados" onchange="getCidades()">
+                    <option value="">Selecione...</option>
+                </select>
+
+                <label for="cidades">Cidades:</label>
+                <select id="cidades">
+                    <option value="">Selecione um estado primeiro</option>
+                </select>
+
+                <button class="btn-cadastro" onclick="submitForm(event)">Cadastrar</button>
+
+                
+            </form>
+        </div>
+    </div>
+
+
+    <div id="custom-alert" class="modal-alert">
+        <div class="modal-alert">
+            <h2>Alerta</h2>
+            <p id="alert-message"></p>
+            <button id="close-alert">Fechar</button>
+        </div>
+    </div>
+
+    <script src="./js/login-page.js"></script>
 </body>
 
 </html>
