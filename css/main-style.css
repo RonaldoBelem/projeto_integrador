@@ -201,6 +201,9 @@ aside {
   padding: 30px;
   border: 1px solid #ccc;
 }
+aside li:hover{
+    text-decoration: underline;
+}
 .ouvidoria {
   margin: 30px 0;
 }
