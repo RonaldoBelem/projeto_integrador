@@ -188,6 +188,9 @@ footer li img {
     margin-top: 20px;
     border-bottom: 1px solid #ccc;
 }
+.artigos article:hover{
+  border-bottom: 1px solid #8a8989;
+}
 
 .artigos img{
     margin-top: 15px;
