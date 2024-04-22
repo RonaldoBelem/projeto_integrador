@@ -15,7 +15,7 @@ async function getEstados() {
         estados.forEach(estado => {
             const option = document.createElement('option');
             option.value = estado.sigla;
-            option.textContent = estado.nome;
+            option.textContent = `${estado.nome} (${estado.sigla})`;
             estadosSelect.appendChild(option);
         });
     } catch (error) {
