@@ -1,29 +1,29 @@
 /* SEGUNDA PÁGINA */
 .conteudo-principal {
-    flex: 4;
+  flex: 4;
 }
 
 aside {
-    flex: 1;
-    margin-top: 80px;
+  flex: 1;
+  margin-top: 80px;
 }
 
 .sobre-empresa img {
-    width: 550px;
-    max-width: 100%;
+  width: 550px;
+  max-width: 100%;
 }
 
 .realizadores .container {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
 .realizadores li {
-    width: 400px;
-    padding: 20px;
-    display: inline-block;
+  width: 400px;
+  padding: 20px;
+  display: inline-block;
 }
 
 .realizadores p {
-    text-align: justify;
+  text-align: justify;
 }
