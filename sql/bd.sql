@@ -31,7 +31,7 @@ CREATE TABLE parceiro (
   url_site VARCHAR(255)
 );
 
--- Inserindo dados fictícios na tabela "usuario"
+
 INSERT INTO usuario (nome, email, senha, cidade, estado)
 VALUES
   ('João', 'joao@example.com', 'senha123', 'São Paulo', 'SP'),
@@ -45,7 +45,7 @@ VALUES
   ('Fernando', 'fernando@example.com', 'senhapqr', 'Recife', 'PE'),
   ('Mariana', 'mariana@example.com', 'senhastu', 'Manaus', 'AM');
 
--- Inserindo dados fictícios na tabela "publicacao"
+
 INSERT INTO publicacao (user_id, titulo, texto, data)
 VALUES
   (1, 'Primeira Publicação', 'Este é o texto da primeira publicação.', '2024-04-21 10:00:00'),
@@ -59,7 +59,7 @@ VALUES
   (9, 'Atualização de Segurança', 'Informações sobre a atualização de segurança.', '2024-04-29 19:00:00'),
   (10, 'Evento Futuro', 'Preparativos para o evento.', '2024-04-30 08:00:00');
 
--- Inserindo dados fictícios na tabela "artigo"
+
 INSERT INTO artigo (titulo, data, url_img, texto)
 VALUES
   ('Novo Artigo', '2024-04-21 09:00:00', 'http://example.com/img1.jpg', 'Texto do novo artigo.'),
@@ -73,7 +73,7 @@ VALUES
   ('O Futuro do Trabalho', '2024-04-29 20:30:00', 'http://example.com/img9.jpg', 'Perspectivas sobre o futuro do mercado de trabalho.'),
   ('Cuidados com o Meio Ambiente', '2024-04-30 09:30:00', 'http://example.com/img10.jpg', 'A importância da sustentabilidade para o planeta.');
 
--- Inserindo dados fictícios na tabela "parceiro"
+
 INSERT INTO parceiro (nome, url_img, url_site)
 VALUES
   ('Parceiro 1', 'http://example.com/img1.jpg', 'http://parceiro1.com'),
