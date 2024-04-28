@@ -143,6 +143,7 @@ p {
 footer {
   height: 64px;
   align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.219);
 }
 
 footer li {
@@ -154,11 +155,6 @@ footer li img {
 }
 
 /* PRIMEIRA PÁGINA */
-.destaques ul,
-.logotipo-parcerias ul {
-  margin: 0;
-  padding: 0;
-}
 
 .destaques li,
 .logotipo-parcerias li {
@@ -177,38 +173,6 @@ footer li img {
 .destaques--list img {
   width: 300px;
   height: 200px;
-}
-
-/* SEGUNDA PÁGINA */
-.conteudo-principal {
-  flex: 4;
-}
-
-.artigos article{
-    margin-top: 20px;
-    border-bottom: 1px solid #ccc;
-}
-.artigos article:hover{
-  border-bottom: 1px solid #8a8989;
-}
-
-.artigos img{
-    margin-top: 15px;
-    width: 320px;
-    height: 180px;
-}
-
-aside {
-  flex: 1;
-  margin: 80px 0 0 80px;
-  padding: 30px;
-  border: 1px solid #ccc;
-}
-aside li:hover{
-    text-decoration: underline;
-}
-.ouvidoria {
-  margin: 30px 0;
 }
 
 /* TERCEIRA PÁGINA */

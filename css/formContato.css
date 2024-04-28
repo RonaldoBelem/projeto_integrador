@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
 form{
     display: flex;
@@ -5,7 +6,7 @@ form{
     width: 500px;
     border: 1px solid;
     padding: 20px;
-    
+    font-family: "Inter Tight", sans-serif;
 }
 
 .cpObrigatorio::after{
@@ -14,19 +15,42 @@ form{
     background-color: rgb(88, 71, 71);
     float: right;
 }
+
 .correto{
     background-color: rgb(231, 239, 230);
 }
+
 .errado{
     background-color: rgb(241, 221, 221);
 }
 
 form button{
     background-color: var(--cor05);
-   
-    border-radius: 5px;
-    margin-top: 15px;
     padding: 3px;
-    font-size: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
     color: white;
+    font-family: "Inter Tight", sans-serif;
+    font-size: 15px;
+}
+
+label {
+    padding: 5px 0px 5px 6px;
+}
+
+input {
+    padding: 2px;
+}
+
+select {
+    width: 390px;
+    padding: 2px;
+    margin-left: 4px;
+}
+
+textarea {
+    width: 390px;
+    margin-left: 4px;
 }
