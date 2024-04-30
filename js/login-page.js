@@ -118,7 +118,7 @@ function validateForm() {
         return false;
     }
 
-    alert("O formulário foi enviado com sucesso!");
+    showAlert('Formulário enviado com sucesso!');
 }
 
 function submitForm(event) {
