@@ -45,7 +45,7 @@ const destaquesObj = [
     alt: 'Imagem de destaque 1'
   },
   {
-    titulo: 'Saude e bem Estar',
+    titulo: 'Saúde e bem Estar',
     url: './img/destaque/saude-envolve-bem-estar-fisico-mental-social.jpg',
     alt: 'Imagem de destaque 1'
   },
@@ -61,7 +61,7 @@ const destaquesObj = [
     alt: 'Imagem de destaque 1'
   },
   {
-    titulo: 'Saude e bem Estar',
+    titulo: 'Saúde e bem Estar',
     url: './img/destaque/saude-envolve-bem-estar-fisico-mental-social.jpg',
     alt: 'Imagem de destaque 1'
   },
@@ -82,7 +82,7 @@ export function destaques() {
     destaquesList.innerHTML += `
         <li>
           <article>
-            <a href="#">
+            <a href="artigo_exemplo.html">
             <h2 style="text-align: center;">${destaquesObj[i].titulo}</h2>
               <img src="${destaquesObj[i].url}" alt="">
             </a>  

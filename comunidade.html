@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/main-style.css">
   <link rel="stylesheet" href="css/4-comunidade.css">
+  
   <script src="https://kit.fontawesome.com/63c7ffeddf.js" crossorigin="anonymous"></script>
   <title>Comunidade</title>
 </head>
@@ -46,14 +47,24 @@
 
   <!-- MAIN -->
   <main>
+    <h1 class="titulo">Comunidade de Saúde Online</h1>
+    <p class="subtitulo">Juntos por um Futuro Saudável</p>
     <div class="container">
-      <section class="minhas-publicacoes">
-        <h1>Comunidade</h1>
-        <form action="#">
-          <label for="publicacoes">Envie sua publicação:</label>
-          <textarea name="publicacoes" id="publicacoes" cols="30" rows="10" class="textarea"></textarea>
-          <input type="submit" value="Enviar Publicação" class="button">
-        </form>
+      <section>
+        <div class="cabecalho">
+          <p style="margin-left: -20px;">Todos os posts</p>
+          <p>Meus posts</p>
+          <button id="mostrarCaixa" class="button_post">+Criar novo post</button>
+        </div>
+      </section>
+      <section>
+        <div class="forum">
+          <form action="#">
+            <label for="publicacoes">Digite aqui sua publicação:</label>
+            <textarea name="publicacoes" id="publicacoes" cols="30" rows="10" class="textarea"></textarea>
+            <input type="submit" value="Enviar Publicação" class="button">
+          </form>
+        </div>
       </section>
 
       <section class="ultimas-publicacoes">
@@ -141,5 +152,6 @@
         </ul>
     </div>
 </footer>
+<script src="js/newpost.js"></script>
 </body>
 </html>

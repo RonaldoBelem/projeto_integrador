@@ -109,3 +109,34 @@ aside li:hover{
 footer {
   margin-top: 20px;
 }
+
+/* AREA COMENTÁRIO */
+
+
+h4 {
+  color: #0068b2;
+  margin-top: 5px;
+}
+
+.area_comentario {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.area_comentario textarea {
+  width: 760px;
+  padding: 3px;
+  margin: 5px 0px;
+  border-radius: 5px;
+}
+
+.area_comentario button {
+  background-color: #0068b2;
+  color: white;
+  border: 1px solid rgba(128, 128, 128, 0.219);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70px;
+  padding: 3px;
+}

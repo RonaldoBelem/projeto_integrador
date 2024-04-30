@@ -1,18 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
 
+.contato {
+    margin: 50px 0;
+}
+  
+.contato form {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    /* border: 1px solid rgb(187, 187, 187); */
+    padding: 10px;
+    border-radius: 5px;
+}
+  
+.contato form input {
+    margin: 5px;
+    border: 1px solid rgb(187, 187, 187);
+    border-radius: 5px;
+}
+
 form{
     display: flex;
     flex-direction: column;
     width: 500px;
-    border: 1px solid;
     padding: 20px;
     font-family: "Inter Tight", sans-serif;
 }
 
 .cpObrigatorio::after{
-    content: "*Campo Obrigatorio ";
+    content: "*Campo Obrigatorio! ";
     color: white;
-    background-color: rgb(88, 71, 71);
+    font-size: 15px;
+    background-color: rgb(236, 41, 41);
+    padding: 2px;
+    border-radius: 5px;
     float: right;
 }
 
@@ -48,9 +70,31 @@ select {
     width: 390px;
     padding: 2px;
     margin-left: 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
 }
 
 textarea {
     width: 390px;
     margin-left: 4px;
+    border-radius: 5px;
+    border: 1px solid rgb(187, 187, 187);
 }
+
+/* PARALLAX */
+
+.parallax {
+    background: url('../img/img2-parallax.jpg') center no-repeat fixed;
+    background-size: cover;
+    /* box-shadow: #77B1E1 15px 0px 20px 5px; */ 
+    padding: 2px;
+    text-align: center;
+}
+
+/* .parallax {
+    background: #bbe8f2 center no-repeat fixed;
+    background-size: cover;
+    box-shadow: #bbe8f2 15px 0px 20px 5px;
+    padding: 2px;
+    text-align: center;
+} */

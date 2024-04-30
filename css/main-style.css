@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Inter Tight", sans-serif;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
@@ -72,7 +73,7 @@ header nav li a {
 header nav li a:hover {
   color: var(--cor-fonte);
   text-transform: 0.1s;
-  border-bottom: 2px solid var(--cor-fonte);
+  border-bottom: 3px solid var(--cor-fonte);
 }
 
 .secao-pesquisar {
@@ -82,7 +83,7 @@ header nav li a:hover {
 .secao-pesquisar:hover {
   /* border-radius: 20px; */
   /* border: 1px solid #0068b2; */
-  border-bottom: 2px solid var(--cor-fonte);
+  border-bottom: 3px solid var(--cor-fonte);
 }
 
 #input-pesquisar {
@@ -122,20 +123,6 @@ p {
   line-height: 25px;
   text-indent: 15px;
   text-align: justify;
-}
-
-.button {
-  font-family: "Inter Tight", sans-serif;
-  color: #fff;
-  background-color: var(--cor-hover);
-  margin: 16px 0;
-  padding: 12px;
-  border: none;
-  border-radius: 2px;
-}
-
-.button:hover {
-  cursor: pointer;
 }
 
 /* F O O T E R */
@@ -232,24 +219,6 @@ footer li img {
 .container-flex {
   display: flex;
   justify-content: space-evenly;
-}
-
-.contato {
-  margin: 50px 0;
-}
-
-.contato form {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 400px;
-  border: 1px solid rgb(187, 187, 187);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.contato form input {
-  margin: 5px;
 }
 
 .foto-realizadores {

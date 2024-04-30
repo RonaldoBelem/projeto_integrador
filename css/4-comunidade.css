@@ -1,5 +1,94 @@
 /* QUARTA PÁGINA */
 
+body {
+    background-image: url('../img/img-backroung-4.jpg');
+    font-family: "Inter Tight", sans-serif;
+}
+
+main .container {
+    background-color: #fff;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 1px 10px;
+    border-radius: 5px;
+}
+
+/* Título */
+
+.titulo {
+    color: #fafcfd;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 32px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    text-align: center;
+    color: #fafcfd;
+    font-weight: bolder;
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+}
+
+.cabecalho p {
+    color: #5fb6d9;
+    font-weight: bold;
+    margin-right: 12px;
+}
+
+.cabecalho p:hover {
+    text-decoration: underline #5fb6d9;
+    cursor: pointer;
+}
+
+.forum {
+    display: none;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+
+.button_post {
+    margin-left: 730px;
+    padding: 5px;
+    background-color: #5fb6d9;
+    border: 1px solid rgba(128, 128, 128, 0.219);
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button {
+  font-family: "Inter Tight", sans-serif;
+  color: #fff;
+  background-color: #0068b2;
+  margin: 16px 0;
+  padding: 12px;
+  border: none;
+  border-radius: 2px;
+} 
+
+.button:hover {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
 #publicacoes {
     display: flex;
     width: 600px;

@@ -53,8 +53,6 @@
       <img src="./img/carrosel/bem-estar.jpg" alt="">
       <img src="./img/carrosel/2148765597.jpg" alt="">
       <img src="./img/carrosel/2149611240.jpg" alt="">
-      <img src="img/banners/banner-2.jpg" alt="">
-      <img src="img/banners/banner-1.jpg" alt="">
       <img src="img/banners/banner-3.jpg" alt="">
     </div>
     <button class="prev-btn"><i class="fa-solid fa-chevron-left"></i></button>
@@ -143,63 +141,59 @@
             </section>
           </div>
         </section>
+      </div>
 
         <!-- contato -->
-        <section class="contato">
-          <h1 id="contato">Entre em contato conosco</h1>
-          <form action="#" style="text-align: left;">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" required>
+        <div class="parallax">
+          <section class="contato">
+            <h1 id="contato">Entre em contato conosco</h1>
+            <form action="#" style="text-align: left;">
+              <label for="nome">Nome:</label>
+              <input type="text" id="nome" required>
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" id="sobrenome" required>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" required>
+              <label for="estado">Estado:</label>
+              <select id="estado" name="estado" required>
+                <option>Selecione o Estado</option>
+                <option>Acre (AC)</option>
+                <option>Alagoas (AL)</option>
+                <option>Amapá (AP)</option>
+                <option>Amazonas (AM)</option>
+                <option>Bahia (BA)</option>
+                <option>Ceará (CE)</option>
+                <option>Distrito Federal (DF)</option>
+                <option>Espírito Santo (ES)</option>
+                <option>Goiás (GO)</option>
+                <option>Maranhão (MA)</option>
+                <option>Mato Grosso (MT)</option>
+                <option>Mato Grosso do Sul (MS)</option>
+                <option>Minas Gerais (MG)</option>
+                <option>Pará (PA)</option>
+                <option>Paraíba (PB)</option>
+                <option>Paraná (PR)</option>
+                <option>Pernambuco (PE)</option>
+                <option>Piauí (PI)</option>
+                <option>Rio de Janeiro (RJ)</option>
+                <option>Rio Grande do Norte (RN)</option>
+                <option>Rio Grande do Sul (RS)</option>
+                <option>Rondônia (RO)</option>
+                <option>Roraima (RR)</option>
+                <option>Santa Catarina (SC)</option>
+                <option>São Paulo (SP)</option>
+                <option>Sergipe (SE)</option>
+                <option>Tocantins (TO)</option>
+              </select>
+              <label for="cidade">Cidade:</label>
+              <input type="text" id="cidade" required>
+              <label for="texto">Escreva sua mensagem:</label>
+              <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
+              <button type="submit">Enviar</button>
+            </form>
+          </section>
+        </div>
 
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" id="sobrenome" required>
-
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" required>
-
-            <label for="estado">Estado:</label>
-            <select id="estado" name="estado" required>
-              <option>Selecione o Estado</option>
-              <option>Acre (AC)</option>
-              <option>Alagoas (AL)</option>
-              <option>Amapá (AP)</option>
-              <option>Amazonas (AM)</option>
-              <option>Bahia (BA)</option>
-              <option>Ceará (CE)</option>
-              <option>Distrito Federal (DF)</option>
-              <option>Espírito Santo (ES)</option>
-              <option>Goiás (GO)</option>
-              <option>Maranhão (MA)</option>
-              <option>Mato Grosso (MT)</option>
-              <option>Mato Grosso do Sul (MS)</option>
-              <option>Minas Gerais (MG)</option>
-              <option>Pará (PA)</option>
-              <option>Paraíba (PB)</option>
-              <option>Paraná (PR)</option>
-              <option>Pernambuco (PE)</option>
-              <option>Piauí (PI)</option>
-              <option>Rio de Janeiro (RJ)</option>
-              <option>Rio Grande do Norte (RN)</option>
-              <option>Rio Grande do Sul (RS)</option>
-              <option>Rondônia (RO)</option>
-              <option>Roraima (RR)</option>
-              <option>Santa Catarina (SC)</option>
-              <option>São Paulo (SP)</option>
-              <option>Sergipe (SE)</option>
-              <option>Tocantins (TO)</option>
-            </select>
-
-            <label for="cidade">Cidade:</label>
-            <input type="text" id="cidade" required>
-
-            <label for="texto">Escreva sua mensagem:</label>
-            <textarea name="texto" id="texto" cols="30" rows="10"></textarea>
-
-            <button type="submit">Enviar</button>
-          </form>
-        </section>
-
-    </div>
   </main>
 
   <!-- FOOTER -->
