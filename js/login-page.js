@@ -69,7 +69,6 @@ function modal() {
 
     closeBtn.onclick = function () {
         modal.style.opacity = 0;
-        modal.style.pointerEvents = "none";
         setTimeout(function () {
             modal.style.display = "none";
         }, 300);
@@ -78,7 +77,6 @@ function modal() {
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.opacity = 0;
-            modal.style.pointerEvents = "none";
             setTimeout(function () {
                 modal.style.display = "none";
             }, 300);
